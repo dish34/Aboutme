@@ -13,6 +13,10 @@
   background-size:cover;
   color:white;
 }
+body{
+  font-family: 'Lilita One', cursive;
+
+}
 .top-content{
   width:100%;
 }
@@ -40,6 +44,9 @@ h1{
   animation-name: moveleft;
   animation-duration: 1s;
 }
+h3{
+  font-family: 'Nunito', sans-serif;
+}
 .button-large{
   color:white;
   border-radius: 5px;
@@ -48,6 +55,8 @@ h1{
   border-color: black;
   background-color: black;
   margin-top: 5px;
+    font-family: 'Lilita One', cursive;
+    font-size: 18;
 }
 svg {
   height: 3.75rem;
