@@ -3,7 +3,7 @@ function revealMessage(num) {
   //var x = document.getElementsByClassName("box");
   var x = document.getElementById('skill');
   x.style.display ='block';
-  document.getElementsByClassName("activity").style.display = "none";
+  document.getElementById('activity').style.display = "none";
   document.getElementById('project').style.display ="none";
 
 
