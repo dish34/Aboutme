@@ -39,6 +39,7 @@ body{
   font-weight: bold;
 }
 h1{
+  font-family: 'Lilita One', cursive;
   padding-bottom: 5px;
   font-size: 50px;
   animation-name: moveleft;
@@ -46,6 +47,7 @@ h1{
 }
 h3{
   font-family: 'Nunito', sans-serif;
+  margin:5px 0px 10px 0px;
 }
 .button-large{
   color:white;
