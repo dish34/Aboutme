@@ -134,9 +134,12 @@ span::selection,h1::selection{
 /* for small width */
 @media(max-width: 767px){
   .col-lm-4{
-    width:200px;
+    width:150px;
   }
   .aboutheight{
     height:1000px;
+  }
+  .boxw{
+    width:130px;
   }
 }
