@@ -5,7 +5,6 @@
 }
 body{
   font-family: 'Lilita One', cursive;
-
 }
 .full-screen{
   height:100vh;
@@ -45,6 +44,7 @@ button{
     outline:none;
     font-size: 18px;
 }
+
 .header{
   margin-top: 5px;
   border:1px solid black;
