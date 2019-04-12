@@ -112,3 +112,27 @@ svg:hover{
   }
 
 }
+#git{
+  height:50px;
+  width: 50px;
+  border:1px solid transparent;
+  padding: 5px;
+  -padding-bottom: 10px;
+}
+hover:icons{
+  color:orange;
+}
+#quora{
+  height:50px;
+  width:50px;
+}
+.icon{
+  height:64px;
+  width: 64px;
+  border:1px solid transparent;
+}
+.git{
+  height:25px;
+  width: 34px;
+  border:1px solid transparent;
+}
