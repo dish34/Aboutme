@@ -144,3 +144,8 @@ span::selection,h1::selection{
     width:160px;
   }
 }
+.alinkbox{
+  height:200px;
+  width:160px;
+  display: block;
+}
