@@ -79,7 +79,6 @@ height:650px;
   float:left;
   margin:5px;
   -background-color: green;
-  padding-top: 60px;
   -display: none;
   color:black;
   background-color: #fff4ef;//#ffecc9;//#fcfaf2;//#f2f6fc;
@@ -92,7 +91,6 @@ height:650px;
   float:left;
   margin:5px;
   -background-color: green;
-  padding-top: 60px;
   -display: none;
   color:black;
 }
@@ -148,4 +146,7 @@ span::selection,h1::selection{
   height:200px;
   width:160px;
   display: block;
+  display: flex;
+    align-items: center;
+    justify-content: center;
 }
