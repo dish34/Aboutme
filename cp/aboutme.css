@@ -79,10 +79,12 @@ height:650px;
   float:left;
   margin:5px;
   -background-color: green;
-  padding-top: 60px;
-  -display: none;
+  /*padding-top: 60px;*/
   color:black;
-  background-color: #fff4ef;//#ffecc9;//#fcfaf2;//#f2f6fc;
+  background-color: #fff4ef;
+  display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .box2{
   text-align: center;
