@@ -1,0 +1,7 @@
+var typed3 = new Typed('#text', {
+    strings: [' ', ' <strong>Competitive Programmer</strong>', '<strong>Django Lover</strong>' , '<strong>Quora Writer</strong>'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    smartBackspace: true, // this is a default
+    loop: true
+  });
