@@ -32,11 +32,6 @@ body{
   text-align: center;
 
 }
-#text{
-  font-size: 20px;
-  color:#ffed89;
-  font-style: normal;
-}
 .bottom{
   padding: 1rem;
 }
@@ -72,112 +67,7 @@ svg {
   animation-duration: 3s;
   fill: #fefefe;
 }
-#main{
-  color:white;
-  background-color: black;
-  -height: 50px;
-  -display:flex;
 
-}
-#main-about{
-  padding-top: 10px;
-  color:black;
-  background-color: rgb(242, 246, 252);
-  height:500px;
-  -display:flex;
-  -justify-content: center;
-  -flex-direction: column;
-
-  padding: 30px;
-}
-.intro{
-  display: flex;
-  justify-content:center;
-  font-size: 2.5em;
-}
-.intro2{
-  display: flex;
-  justify-content:center;
-  padding: 15px;
-}
-.about1{
-  height:300px;
-  width:300px;
-  float:left;
-  margin-right: 20px;
-  font-size: 20px;
-}
-.about2{
-  display: flex;
-  justify-content: flex-end;
-}
-.about3{
-  height:100px;
-  width:100px;
-  float:left;
-}
-#dimg{
-  height:300px;
-}
-.name{
-  color:orange;
-}
-#main-skill{
-  height: 300px;
-  background-color:#57e589;
-  color:black;
-
-}
-.center{
- position:relative;
- display: flex;
- justify-content: center;
-}
-.skill1{
-
-  width:100px;
-  float: left;
-  padding: 15px;
-  margin:30px;
-  display: block;
-}
-.skill2{
-  display: block;
-  width:100px;
-  float: left;
-}
-progress{
-  background-color:orange;
-  display: flex;
-  height:3px;
-}
-.d-skill{
-  float: left;
-}
-#main-contact{
-  background-color:r#f9c366;
-  height:300px;
-  border:none;
-}
-#phone{
-  color:white;
-  float:left;
-  margin: 15px;
-}
-#address{
-  color:white;
-  float:left;
-  margin:15px;
-  padding: 5px;
-}
-#byebye{
-  background:white;
-  padding: 5px;
-}
-div > p{
-  -animation-name: moveleft;
-  -animation-duration: 1s;
-}
 h3::selection,h1::selection{
   background-color: black;
   color:orange;
@@ -229,8 +119,8 @@ svg:hover{
   padding: 5px;
   -padding-bottom: 10px;
 }
-.icons img:hover{
-  background-color:orange;
+hover:icons{
+  color:orange;
 }
 #quora{
   height:50px;
