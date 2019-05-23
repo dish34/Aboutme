@@ -32,6 +32,11 @@ body{
   text-align: center;
 
 }
+#text{
+  font-size: 20px;
+  color:#ffed89;
+  font-style: normal;
+}
 .bottom{
   padding: 1rem;
 }
@@ -67,7 +72,6 @@ svg {
   animation-duration: 3s;
   fill: #fefefe;
 }
-<<<<<<< HEAD
 #main{
   color:white;
   background-color: black;
@@ -201,9 +205,6 @@ div > p{
   -animation-name: moveleft;
   -animation-duration: 1s;
 }
-=======
-
->>>>>>> 6d94fd9901627c2ab3f1146fc5fa980b2e053fe0
 h3::selection,h1::selection{
   background-color: black;
   color:orange;
@@ -255,8 +256,8 @@ svg:hover{
   padding: 5px;
   -padding-bottom: 10px;
 }
-hover:icons{
-  color:orange;
+.icons img:hover{
+  background-color:orange;
 }
 #quora{
   height:50px;
