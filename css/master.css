@@ -167,6 +167,58 @@ progress{
 .d-skill{
   float: left;
 }
+.Quora{
+  background-color: white;
+  height:500px;
+  color:black;
+}
+.writer{
+color: black;
+text-align: center;
+padding: 0px 15px 0px 2px;
+}
+.qname{
+  font-size: 2em;
+  color:#c70808;
+  text-align: center;
+}
+.bestans{
+  height:200px;
+  width:200px;
+  background-color: rgb(237, 243, 252);
+  float:left;
+  margin: 15px 10px 10px 10px;
+}
+.qans{
+  height:200px;
+  width:200px;
+  color:#c70808;
+  float:left;
+  padding:8px;
+  text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.stats{
+  float:right;
+  height:140px;
+  width:300px;
+  font-size: 1.25em;
+  margin:60px 0px 0px 0px;
+}
+.stats1{
+  float:left;
+  padding: 4px;
+}
+.stats2{
+  float:left;
+  padding: 4px;
+}
+.numbox{
+  height:15px;
+  background-color: grey;
+}
 .contact{
   margin :15px;
   text-align: center;
@@ -259,7 +311,7 @@ svg:hover{
 .icons img:hover{
   background-color:orange;
 }
-#quora{
+.quora{
   height:50px;
   width:50px;
 }
@@ -313,7 +365,7 @@ svg:hover{
     width: 100%;
   }
 }
-@media (min-width: 0px) and (max-width: 992px) {
+@media (min-width: 444px) and (max-width: 992px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
   }
 
@@ -363,5 +415,34 @@ svg:hover{
   }
   .sintro{
     font-size: 2em;
+  }
+  .sstats{
+    float:left;
+  }
+
+}
+@media (max-width: 443px) {
+  .squora{
+    height: 700px;
+  }
+  .simg{
+    display: none;
+    justify-content: flex-end;
+    width:100px;
+  }
+  .sabout1{
+    padding: 5px;
+  }
+  .sintro{
+    font-size: 2em;
+  }
+  .sstats{
+    float:left;
+       margin: 15px;
+  }
+  .sbestans{
+    margin: 15px;
+    display: block;
+
   }
 }
