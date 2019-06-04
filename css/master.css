@@ -250,12 +250,12 @@ padding: 0px 15px 0px 2px;
 }
 .mapouter
 {
-  position:;text-align:right;height:300px;width:400px;
+  position:;text-align:right;height:300px;width:350px;
   border:1px solid rgb(244, 248, 255);
 }
 .gmap_canvas
 {
-  overflow:hidden;background:none!important;height:300px;width:400px;
+  overflow:hidden;background:none!important;height:300px;width:350px;
 }
 .map{
   display:flex;
@@ -458,5 +458,10 @@ svg:hover{
   }
   .scontact{
     height:500px;
+  }
+  .smap{
+    display: flex;
+    justify-content: center;
+    width:95%;
   }
 }
