@@ -233,7 +233,7 @@ padding: 0px 15px 0px 2px;
 }
 #main-contact{
   background-color:r#f9c366;
-  height:300px;
+  height:500px;
   border:none;
 }
 #phone{
@@ -246,6 +246,20 @@ padding: 0px 15px 0px 2px;
   color:white;
   float:left;
   margin: 15px;
+
+}
+.mapouter
+{
+  position:;text-align:right;height:300px;width:400px;
+  border:1px solid rgb(244, 248, 255);
+}
+.gmap_canvas
+{
+  overflow:hidden;background:none!important;height:300px;width:400px;
+}
+#map{
+  display:flex;
+  justify-content: center;
 
 }
 #byebye{
