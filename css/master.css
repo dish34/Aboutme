@@ -257,10 +257,9 @@ padding: 0px 15px 0px 2px;
 {
   overflow:hidden;background:none!important;height:300px;width:400px;
 }
-#map{
+.map{
   display:flex;
   justify-content: center;
-
 }
 #byebye{
   background:white;
@@ -456,6 +455,8 @@ svg:hover{
   .sbestans{
     margin: 15px;
     display: block;
-
+  }
+  .scontact{
+    height:500px;
   }
 }
