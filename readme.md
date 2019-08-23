@@ -6,8 +6,6 @@
 
 ## Aboutme
 
----
-
 - Home Page
 - About
 - Skills
