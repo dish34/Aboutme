@@ -1,152 +1,165 @@
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: 'Lilita One', cursive;
-
+body {
+  font-family: "Lilita One", cursive;
 }
-.full-screen{
-  height:100vh;
+.full-screen {
+  height: 100vh;
   background: url("black.pn");
-  background-size:cover;
-  color:black;
+  background-size: cover;
+  color: black;
 }
-.top-content{
-  width:100%;
+.top-content {
+  width: 100%;
 }
-.top{
-  height:50px;
+.top {
+  height: 50px;
   background-color: black;
 }
-.top-left{
+.top-left {
   padding: 15px;
 }
-a{
-  text-decoration:none;
+a {
+  text-decoration: none;
   color: white;
 }
-a:hover{
-  color:orange;
+a:hover {
+  color: orange;
 }
-img{
-   border:5px solid black;
-   clip-path: circle(35.7% at 44% 55%);
+img {
+  border: 5px solid transparent;
+  clip-path: circle(35.7% at 44% 55%);
   animation: rotate;
   animation-duration: 2s;
 }
-button{
-    background-color: #edebea;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-    font-size: 18px;
+.aimg {
+  height: 300px;
+  width: 200px;
 }
-.header{
+.imgcenter {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+button {
+  background-color: #edebea;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  font-size: 18px;
+}
+.header {
   margin-top: 5px;
-  border:1px solid black;
-
+  border: 1px solid black;
 }
-.about{
-float:left;
-border-right: 1px solid black;
-background-color: #ffdcc9;
-height:650px;
+.about {
+  float: left;
+  border-right: 1px solid black;
+  background-color: #ffdcc9;
+  height: 650px;
 }
-.information{
-    float: left;
-    color:grey;
-    -display: none;
+.information {
+  float: left;
+  color: grey;
+  -display: none;
 }
-#skill{
+#skill {
   -position: relative;
-  display:;
+  display: ;
 }
-#project{
-  display:none;
+#project {
+  display: none;
 }
-#activity{
-  display:none;
+#activity {
+  display: none;
+  height: 700px;
 }
-.box{
+.box {
   text-align: center;
-  height:200px;
-  width:160px;
-  border:1px solid black;
-  float:left;
-  margin:5px;
+  height: 200px;
+  width: 160px;
+  border: 1px solid black;
+  float: left;
+  margin: 5px;
   -background-color: green;
   -display: none;
-  color:black;
-  background-color: #fff4ef;//#ffecc9;//#fcfaf2;//#f2f6fc;
+  color: black;
+  background-color: #fff4ef;
 }
-.box2{
+.box2 {
   text-align: center;
-  height:200px;
-  width:160px;
-  border:1px solid black;
-  float:left;
-  margin:5px;
+  height: 200px;
+  width: 160px;
+  border: 1px solid black;
+  float: left;
+  margin: 5px;
   -background-color: green;
   -display: none;
-  color:black;
+  color: black;
 }
 
-h1{
+h1 {
   animation: rotate;
   animation-duration: 2s;
 }
-p{
+p {
   text-align: center;
 }
-p > a{
-   text-align: center;
-   color: black;
+p > a {
+  text-align: center;
+  color: black;
 }
-button{
+button {
   background-color: white;
-  font-family: 'Lilita One', cursive;
+  font-family: "Lilita One";
   font-size: 15;
 }
-span::selection,h1::selection{
-  color:orange;
+span::selection,
+h1::selection {
+  color: orange;
 }
 @keyframes rotate {
-  0%{
-    opacity:0;
+  0% {
+    opacity: 0;
     transform: rotate(0);
   }
-  80%{
+  80% {
     transform: rotate(90);
   }
-  100%{
-    opacity:1;
-    transform: rotate(0)
+  100% {
+    opacity: 1;
+    transform: rotate(0);
   }
 }
-@media (min-width:768px) and (max-width:991px) {
-
+@media (min-width: 768px) and (max-width: 991px) {
 }
 /* for small width */
-@media(max-width: 767px){
-  .col-lm-4{
-    width:150px;
+@media (max-width: 767px) {
+  .col-lm-4 {
+    width: 150px;
   }
-  .aboutheight{
-    height:1000px;
+  .sclip {
+    clip-path: circle(50% at 50% 50%);
   }
-  .boxw{
-    width:160px;
+  .aboutheight {
+    height: 1000px;
+  }
+  .boxw {
+    width: 160px;
   }
 }
-.alinkbox{
-  height:200px;
-  width:160px;
+.alinkbox {
+  height: 200px;
+  width: 160px;
   display: block;
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
+  color: black;
 }
