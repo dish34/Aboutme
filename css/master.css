@@ -375,6 +375,21 @@ svg:hover {
   width: 34px;
   border: 1px solid transparent;
 }
+body::-webkit-scrollbar {
+  width: 15px;
+}
+body::-webkit-scrollbar-track {
+  background: rgba(251, 255, 240);
+}
+body::-webkit-scrollbar-thumb {
+  background: #f9c366;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: orange;
+}
+body::-webkit-scrollbar-corner {
+  background: black;
+}
 @media (min-width: 993px) {
   .col-lg-1,
   .col-lg-2,
@@ -533,7 +548,7 @@ svg:hover {
     display: flex;
     justify-content: center;
   }
-  .send{
-    margin:15px 0px 0px 0px;
+  .send {
+    margin: 15px 0px 0px 0px;
   }
 }
