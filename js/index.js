@@ -11,10 +11,9 @@ var typed3 = new Typed("#text", {
   smartBackspace: true, // this is a default
   loop: true
 });
-
+var x = false;
 function play() {
   var audio = document.getElementById("audio");
-  var x = false;
   if (x == false) {
     audio.play();
     x = true;
