@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .full-screen {
   height: 100vh;
   display: flex;
@@ -37,6 +38,12 @@ body {
 }
 .bottom {
   padding: 1rem;
+  padding: 1rem;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 55%;
 }
 .menu a {
   font-weight: bold;
@@ -62,6 +69,15 @@ h3 {
   margin-top: 5px;
   font-family: "Lilita One", cursive;
   font-size: 18;
+}
+.musicontainer{
+  align-self: flex-end;
+}
+.audiobtn{
+  border:none;
+  color:white;
+  background-color: transparent;
+  font-size:35px;
 }
 svg {
   height: 3.75rem;
@@ -253,7 +269,7 @@ progress {
   justify-content: center;
 }
 #main-contact {
-  background-color: r#f9c366;
+  background-color: black;
   height: 500px;
   border: none;
 }
@@ -349,6 +365,15 @@ svg:hover {
   100% {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
   }
 }
 #git {
