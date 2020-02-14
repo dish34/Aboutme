@@ -70,14 +70,16 @@ h3 {
   font-family: "Lilita One", cursive;
   font-size: 18;
 }
-.musicontainer{
+.musicontainer {
   align-self: flex-end;
+  animation-name: up;
+  animation-duration: 4s;
 }
-.audiobtn{
-  border:none;
-  color:white;
+.audiobtn {
+  border: none;
+  color: white;
   background-color: transparent;
-  font-size:35px;
+  font-size: 35px;
 }
 svg {
   height: 3.75rem;
@@ -369,11 +371,11 @@ svg:hover {
 }
 @keyframes spin {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 #git {
