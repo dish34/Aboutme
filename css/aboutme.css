@@ -55,14 +55,17 @@ button {
   font-size: 18px;
 }
 .header {
-  margin-top: 5px;
   border: 1px solid black;
 }
 .about {
   float: left;
   border-right: 1px solid black;
   background-color: #ffdcc9;
-  height: 650px;
+  height: 800px;
+  position: fixed;
+}
+.space {
+  margin-left: 265px;
 }
 .information {
   float: left;
@@ -124,6 +127,17 @@ span::selection,
 h1::selection {
   color: orange;
 }
+#git {
+  height: 50px;
+  width: 50px;
+  border: 1px solid transparent;
+  padding: 5px;
+}
+.icon {
+  height: 64px;
+  width: 64px;
+  border: 1px solid transparent;
+}
 @keyframes rotate {
   0% {
     opacity: 0;
@@ -143,6 +157,9 @@ h1::selection {
 @media (max-width: 767px) {
   .col-lm-4 {
     width: 150px;
+  }
+  .col-sm-4 {
+    margin-left: 155px;
   }
   .sclip {
     clip-path: circle(50% at 50% 50%);
