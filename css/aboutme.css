@@ -63,6 +63,7 @@ button {
   background-color: #ffdcc9;
   height: 800px;
   position: fixed;
+  overflow: hidden;
 }
 .space {
   margin-left: 265px;
@@ -128,16 +129,12 @@ h1::selection {
   color: orange;
 }
 #git {
-  height: 50px;
-  width: 50px;
+  height: 55px;
+  width: 55px;
   border: 1px solid transparent;
   padding: 5px;
 }
-.icon {
-  height: 64px;
-  width: 64px;
-  border: 1px solid transparent;
-}
+
 @keyframes rotate {
   0% {
     opacity: 0;
