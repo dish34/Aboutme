@@ -14,11 +14,14 @@ var typed3 = new Typed("#text", {
 var x = false;
 function play() {
   var audio = document.getElementById("audio");
+  var pbtn = document.getElementById("playBtn");
   if (x == false) {
     audio.play();
+    pbtn.value = "⏸️";
     x = true;
   } else {
     audio.pause();
+    pbtn.value = "▶️";
     x = false;
   }
 }
