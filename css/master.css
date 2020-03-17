@@ -69,6 +69,7 @@ h3 {
   margin-top: 5px;
   font-family: "Lilita One", cursive;
   font-size: 18;
+  cursor: help;
 }
 .musicontainer {
   align-self: flex-end;
@@ -80,6 +81,7 @@ h3 {
   color: white;
   background-color: transparent;
   font-size: 35px;
+  cursor: pointer;
 }
 svg {
   height: 3.75rem;
