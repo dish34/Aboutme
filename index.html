@@ -18,237 +18,241 @@
 </head>
 
 <body>
-  <div class="full-screen">
+  <div id="loader"></div>
+  <div id="div-content" style="display:none;">
+    <div class="full-screen">
 
-    <div class="top-content">
-      <div class="top">
-        <div class="top-left">
-          <a class="hlik" href="index.html">HOME</a> &nbsp;
-          <a class="hlik" href="#main-about">ABOUT</a> &nbsp;
-          <a class="hlik" href="#main-skill">SKILLS</a> &nbsp;
-          <a class="hlik" href="#main-quora">QUORA</a> &nbsp;
-          <a class="hlik" href="#main-contact">CONTACTME</a>&nbsp;
+      <div class="top-content">
+        <div class="top">
+          <div class="top-left">
+            <a class="hlik" href="index.html">HOME</a> &nbsp;
+            <a class="hlik" href="#main-about">ABOUT</a> &nbsp;
+            <a class="hlik" href="#main-skill">SKILLS</a> &nbsp;
+            <a class="hlik" href="#main-quora">QUORA</a> &nbsp;
+            <a class="hlik" href="#main-contact">CONTACTME</a>&nbsp;
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="middle">
-      <h1>DISHANT GANDHI</h1>
+      <div class="middle">
+        <h1>DISHANT GANDHI</h1>
 
-      <div class="icons">
-        <a href="https://www.quora.com/profile/Dishant-Gandhi-4"><img class="icon"
-            src="images/107342_social_512x512.png" alt="QUORA"></img></a>&nbsp;
-        <a href="https://www.linkedin.com/in/dishant-gandhi-83b376154/"><img class="icon"
-            src="images\606446_linkedin_48x48.png" alt="LINKEDIN"></a>&nbsp;
-        <a href="https://www.facebook.com/dishant.gandhi.3"><img class="icon" src="images\886374_facebook_512x512.png"
-            alt="FACEBOOK"></a>&nbsp;
-        <a href="https://github.com/dish34"><img id="git" class="icon" src="images\giticon.png" alt="GITHUB"></a>&nbsp;
-      </div>
-
-      <div id="text">
-
-
-      </div>
-      <a href="aboutme.html" target="_blank"> <button class="button-large">Know about me</button></a>
-    </div>
-    <div class="bottom" data="0">
-      <a href="#main"><svg width="24" height="24" viewBox="0 0 24 24">
-          <path
-            d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z" />
-        </svg></a>
-
-      <div class="musicontainer">
-        <input id="playBtn" class="audiobtn" type="button" value="▶️" onclick="play()">
-        <audio id="audio">
-          <source src="StarWarsCantinaBand.mp3" type="audio/mpeg">
-          </source src>
-        </audio>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- ABOUT ME -->
-  <div id="main" data="main-content-section">
-    <div id="main-about" class="ncursor">
-      <h2 class="intro sintro">Hello,
-        <p><span>I Am <span class="name"> Dishant </span></span> !</h2>
-      </p>
-      <p class="intro2"> CSE Student|SRM IST,India </p>
-      <br>
-      <div class="about1 sabout1">
-        <p>I was always fascinated by computers since I was a kid.
-          I spend most of my childhood in gaming.</p>
-
-        <p>I felt so amazing When I had written my first hello world program.
-          Since then, I am learning new things every day.</p>
-
-        <p>I ❤️ Programming</p>
-
-      </div>
-      <div class="about3 simg">
-        Github Respositories: 8
-      </div>
-      <div class="about2">
-        <img class="dimg simg" src="dis.jpg" alt="Dishant Gandhi Image not Loaded">
-      </div>
-      <p>
-      </p>
-    </div>
-    <!-- Skills -->
-    <div id="main-skill">
-      <h2 id="sintro">✔️SKILLS</h2>
-      <div class="center col-sm-4">
-        <ul>
-          <li>
-            <p>📌 C++</p>
-          </li>
-          <div class="contain">
-            <progress value="70" max="100">0%</progress>
-
-          </div>
-
-          <li>
-            <p> 📌Git/Github</p>
-          </li>
-          <div class="contain">
-            <progress value="50" max="100">0%</progress>
-
-          </div>
-
-          <li>
-            <p>📌Competitive &nbsp;Programming</p>
-          </li>
-          <div class="contain">
-            <progress value="30" max="100">0%</progress>
-
-          </div>
-
-          <li>
-            <p>📌Stl</p>
-          </li>
-          <div class="contain">
-            <progress value="46" max="100">0%</p rogress>
-
-          </div>
-
-          <li>
-            <p>📌Django</p>
-          </li>
-          <div class="contain">
-            <progress value="40" max="100">0%</progress>
-
-          </div>
-
-          <li>
-            <p>📌html/css/javascript</p>
-          </li>
-
-          <div class="contain">
-            <progress value="55" max="100">0%</progress>
-          </div>
-
-      </div>
-    </div>
-    <!-- How I started with Web Development -->
-    <section>
-      <div id="how" class="show">
-        <div class="my">
-          <div class="intro sintro">
-            <span class="name" style="color:black"> HOW</span>
-            <p>,I Started</p>
-          </div>
-          <p class="name2" style="color:orange">Web Development</p>
+        <div class="icons">
+          <a href="https://www.quora.com/profile/Dishant-Gandhi-4"><img class="icon"
+              src="images/107342_social_512x512.png" alt="QUORA"></img></a>&nbsp;
+          <a href="https://www.linkedin.com/in/dishant-gandhi-83b376154/"><img class="icon"
+              src="images\606446_linkedin_48x48.png" alt="LINKEDIN"></a>&nbsp;
+          <a href="https://www.facebook.com/dishant.gandhi.3"><img class="icon" src="images\886374_facebook_512x512.png"
+              alt="FACEBOOK"></a>&nbsp;
+          <a href="https://github.com/dish34"><img id="git" class="icon" src="images\giticon.png"
+              alt="GITHUB"></a>&nbsp;
         </div>
-        <div class="col-lg-4 col-sm-12 code text stext">
-          <p>It all started with jealousy and insult.
-            An insult that I cannot make a website.
-            So I practice, practice and still practicing.
-            I Started learning web development from Coursera.
-            Made Some Projects with Html, Css and Javascript.
-          </p>
-          <p>
-            Currently, I am making an ecommerce website with Django.
-            In short, I love making websites.
-          </p>
+
+        <div id="text">
+
+
         </div>
-        <div class="col-lg-4 col-sm-12 code2">
-          <img class="sgif" src="images/DishantGandhi_code.gif" alt="Code not loaded" height="300px" width="350px">
+        <a href="aboutme.html" target="_blank"> <button class="button-large">Know about me</button></a>
+      </div>
+      <div class="bottom" data="0">
+        <a href="#main"><svg width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z" />
+          </svg></a>
+
+        <div class="musicontainer">
+          <input id="playBtn" class="audiobtn" type="button" value="▶️" onclick="play()">
+          <audio id="audio">
+            <source src="StarWarsCantinaBand.mp3" type="audio/mpeg">
+            </source src>
+          </audio>
         </div>
       </div>
-    </section>
-    <!-- Writer on QUORA -->
-    <div id="main-quora" class="Quora squora">
-      <h2>
-        <p class="writer"> Writer on <p class="qname"> Quora </p>
+
+    </div>
+
+    <!-- ABOUT ME -->
+    <div id="main" data="main-content-section">
+      <div id="main-about" class="ncursor">
+        <h2 class="intro sintro">Hello,
+          <p><span>I Am <span class="name"> Dishant </span></span> !</h2>
         </p>
-      </h2>
-      <div class="bestans sbestans">
-        <a class="qans" href="https://qr.ae/TUfaMl">ANSWER 1</a>
-      </div>
-      <div class="bestans sbestans">
-        <a class="qans" href="https://qr.ae/TUtfmH">ANSWER 2</a>
-      </div>
-      <div class="stats sstats">
-        <div class="stats1">
-          <p>VIEWS</p>
-          <span class='numscroller' data-min='0' data-max='203000' data-delay='1' data-increment='500'>0</span>
-          <p>UPVOTES</p>
-          <span class='numscroller' data-min='0' data-max='2000' data-delay='2' data-increment='1'>0</span>
-        </div>
-        <div class="stats2">
-          <p>THANK RECEIVED</p>
-          <span class='numscroller' data-min='0' data-max='5' data-delay='10' data-increment='1'>0</span>
-          <p>SHARES</p>
-          <span class='numscroller' data-min='0' data-max='25' data-delay='10' data-increment='2'>0</span>
+        <p class="intro2"> CSE Student|SRM IST,India </p>
+        <br>
+        <div class="about1 sabout1">
+          <p>I was always fascinated by computers since I was a kid.
+            I spend most of my childhood in gaming.</p>
+
+          <p>I felt so amazing When I had written my first hello world program.
+            Since then, I am learning new things every day.</p>
+
+          <p>I ❤️ Programming</p>
 
         </div>
-      </div>
-    </div>
-
-    <!-- Contact -->
-    <div id="main-contact" class="scontact">
-      <h2 class="contact">Contact<span class="name"> Me </span> </h2>
-      <div id="addr">
-        <div id="phone">
-          <p>📞120-xxxxx-69</p>
+        <div class="about3 simg">
+          Github Respositories: 8
         </div>
-
-        <div class="address">
-          <p>🏠KAUSHAMBI GHAZIABAD,
-            UTTARPARDESH</p>
+        <div class="about2">
+          <img class="dimg simg" src="dis.jpg" alt="Dishant Gandhi Image not Loaded">
         </div>
-
-      </div>
-      <div class="map smap">
-        <div class="mapouter">
-          <div class="gmap_canvas">
-            <iframe width="350" height="300" id="gmap_canvas"
-              src="https://maps.google.com/maps?q=malaygiri%20tower%2Ckaushambi%2Cuttarpardesh&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-            </iframe>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <div id="byebye">
-      <h2 class="intro2" style="color:black;">Bye Bye See you soon🖐️</h2>
-      <div class="end2"><a href='https://www.counter12.com'><img
-            src='https://www.counter12.com/img-415Dyc1aB6z0c9Zy-15.gif' border='0' alt='100'></a>th Visitor
-        <script type='text/javascript' src='https://www.counter12.com/ad.js?id=415Dyc1aB6z0c9Zy'></script>
-
-      </div>
-      <div id="display-end">
-        <p class="end send"> made
-          with ❤️ by Dishant Gandhi
+        <p>
         </p>
       </div>
+      <!-- Skills -->
+      <div id="main-skill">
+        <h2 id="sintro">✔️SKILLS</h2>
+        <div class="center col-sm-4">
+          <ul>
+            <li>
+              <p>📌 C++</p>
+            </li>
+            <div class="contain">
+              <progress value="70" max="100">0%</progress>
+
+            </div>
+
+            <li>
+              <p> 📌Git/Github</p>
+            </li>
+            <div class="contain">
+              <progress value="50" max="100">0%</progress>
+
+            </div>
+
+            <li>
+              <p>📌Competitive &nbsp;Programming</p>
+            </li>
+            <div class="contain">
+              <progress value="30" max="100">0%</progress>
+
+            </div>
+
+            <li>
+              <p>📌Stl</p>
+            </li>
+            <div class="contain">
+              <progress value="46" max="100">0%</p rogress>
+
+            </div>
+
+            <li>
+              <p>📌Django</p>
+            </li>
+            <div class="contain">
+              <progress value="40" max="100">0%</progress>
+
+            </div>
+
+            <li>
+              <p>📌html/css/javascript</p>
+            </li>
+
+            <div class="contain">
+              <progress value="55" max="100">0%</progress>
+            </div>
+
+        </div>
+      </div>
+      <!-- How I started with Web Development -->
+      <section>
+        <div id="how" class="show">
+          <div class="my">
+            <div class="intro sintro">
+              <span class="name" style="color:black"> HOW</span>
+              <p>,I Started</p>
+            </div>
+            <p class="name2" style="color:orange">Web Development</p>
+          </div>
+          <div class="col-lg-4 col-sm-12 code text stext">
+            <p>It all started with jealousy and insult.
+              An insult that I cannot make a website.
+              So I practice, practice and still practicing.
+              I Started learning web development from Coursera.
+              Made Some Projects with Html, Css and Javascript.
+            </p>
+            <p>
+              Currently, I am making an ecommerce website with Django.
+              In short, I love making websites.
+            </p>
+          </div>
+          <div class="col-lg-4 col-sm-12 code2">
+            <img class="sgif" src="images/DishantGandhi_code.gif" alt="Code not loaded" height="300px" width="350px">
+          </div>
+        </div>
+      </section>
+      <!-- Writer on QUORA -->
+      <div id="main-quora" class="Quora squora">
+        <h2>
+          <p class="writer"> Writer on <p class="qname"> Quora </p>
+          </p>
+        </h2>
+        <div class="bestans sbestans">
+          <a class="qans" href="https://qr.ae/TUfaMl">ANSWER 1</a>
+        </div>
+        <div class="bestans sbestans">
+          <a class="qans" href="https://qr.ae/TUtfmH">ANSWER 2</a>
+        </div>
+        <div class="stats sstats">
+          <div class="stats1">
+            <p>VIEWS</p>
+            <span class='numscroller' data-min='0' data-max='203000' data-delay='1' data-increment='500'>0</span>
+            <p>UPVOTES</p>
+            <span class='numscroller' data-min='0' data-max='2000' data-delay='2' data-increment='1'>0</span>
+          </div>
+          <div class="stats2">
+            <p>THANK RECEIVED</p>
+            <span class='numscroller' data-min='0' data-max='5' data-delay='10' data-increment='1'>0</span>
+            <p>SHARES</p>
+            <span class='numscroller' data-min='0' data-max='25' data-delay='10' data-increment='2'>0</span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div id="main-contact" class="scontact">
+        <h2 class="contact">Contact<span class="name"> Me </span> </h2>
+        <div id="addr">
+          <div id="phone">
+            <p>📞120-xxxxx-69</p>
+          </div>
+
+          <div class="address">
+            <p>🏠KAUSHAMBI GHAZIABAD,
+              UTTARPARDESH</p>
+          </div>
+
+        </div>
+        <div class="map smap">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe width="350" height="300" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=malaygiri%20tower%2Ckaushambi%2Cuttarpardesh&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div id="byebye">
+        <h2 class="intro2" style="color:black;">Bye Bye See you soon🖐️</h2>
+        <div class="end2"><a href='https://www.counter12.com'><img
+              src='https://www.counter12.com/img-415Dyc1aB6z0c9Zy-15.gif' border='0' alt='100'></a>th Visitor
+          <script type='text/javascript' src='https://www.counter12.com/ad.js?id=415Dyc1aB6z0c9Zy'></script>
+
+        </div>
+        <div id="display-end">
+          <p class="end send"> made
+            with ❤️ by Dishant Gandhi
+          </p>
+        </div>
+      </div>
+
+
+
+
     </div>
-
-
-
-
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

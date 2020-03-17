@@ -1,3 +1,10 @@
+let load = document.getElementById("loader");
+let divcontent = document.getElementById("div-content");
+setInterval(() => {
+  load.style.display = "none";
+  divcontent.style.display = "block";
+}, 4000);
+
 var typed3 = new Typed("#text", {
   strings: [
     " ",
@@ -13,8 +20,8 @@ var typed3 = new Typed("#text", {
 });
 var x = false;
 function play() {
-  var audio = document.getElementById("audio");
-  var pbtn = document.getElementById("playBtn");
+  let audio = document.getElementById("audio");
+  let pbtn = document.getElementById("playBtn");
   if (x == false) {
     audio.play();
     pbtn.value = "⏸️";
