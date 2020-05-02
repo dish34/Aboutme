@@ -550,6 +550,9 @@ body::-webkit-scrollbar-corner {
   .show {
     height: 600px !important;
   }
+  .static-nav {
+    position: static;
+  }
 }
 @media (max-width: 444px) {
   .squora {
@@ -591,5 +594,8 @@ body::-webkit-scrollbar-corner {
   }
   .send {
     margin: 15px 0px 0px 0px;
+  }
+  .static-nav {
+    position: static;
   }
 }
