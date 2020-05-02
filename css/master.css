@@ -30,6 +30,8 @@ body {
 }
 .top-content {
   width: 100%;
+  position: sticky;
+  top: 0;
 }
 .top {
   height: 50px;
