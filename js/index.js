@@ -11,12 +11,12 @@ var typed3 = new Typed("#text", {
     " <strong>Competitive Programmer</strong>",
     "<strong>Django Lover</strong>",
     "<strong>Quora Writer</strong>",
-    "<strong>A Friend</strong>"
+    "<strong>A Friend</strong>",
   ],
   typeSpeed: 100,
   backSpeed: 150,
   smartBackspace: true, // this is a default
-  loop: true
+  loop: true,
 });
 var x = false;
 function play() {
@@ -31,4 +31,30 @@ function play() {
     pbtn.value = "▶️";
     x = false;
   }
+}
+var sectionInterval;
+var navAnchorTags = document.querySelectorAll(".top-left a");
+for (var i = 0; i < navAnchorTags.length; i++) {
+  console.log(navAnchorTags[i]);
+  navAnchorTags[i].addEventListener("click", function (event) {
+    event.preventDefault();
+    var targetSection = "main-" + this.textContent.trim().toLowerCase();
+    if (targetSection === "main-contactme") {
+      targetSection = "main-contact";
+    }
+    var targetSectionId = document.getElementById(targetSection);
+    // console.log(targetSectionId);
+    var targetSectionCordinates = targetSectionId.getBoundingClientRect();
+
+    console.log(targetSectionCordinates.top);
+    sectionInterval = setInterval(function () {
+      if (targetSectionId.getBoundingClientRect().top <= 40) {
+        clearInterval(sectionInterval);
+        return;
+      }
+
+      window.scrollBy(0, 40);
+    }, 20);
+    console.log(targetSectionCordinates.top);
+  });
 }
