@@ -48,7 +48,7 @@ for (var i = 0; i < navAnchorTags.length; i++) {
 
     console.log(targetSectionCordinates.top);
     sectionInterval = setInterval(function () {
-      if (targetSectionId.getBoundingClientRect().top <= 40) {
+      if (targetSectionId.getBoundingClientRect().top <= 50) {
         clearInterval(sectionInterval);
         return;
       }
