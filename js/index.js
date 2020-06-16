@@ -3,7 +3,7 @@ let divcontent = document.getElementById("div-content");
 setInterval(() => {
   load.style.display = "none";
   divcontent.style.display = "block";
-}, 4000);
+}, 3000);
 
 var typed3 = new Typed("#text", {
   strings: [
@@ -34,19 +34,19 @@ function play() {
 }
 var sectionInterval;
 var navAnchorTags = document.querySelectorAll(".top-left a");
-for (var i = 0; i < navAnchorTags.length; i++) {
-  console.log(navAnchorTags[i]);
+for (var i = 0; i < navAnchorTags.length - 1; i++) {
+  // console.log(navAnchorTags[i]);
   navAnchorTags[i].addEventListener("click", function (event) {
     event.preventDefault();
     var targetSection = "main-" + this.textContent.trim().toLowerCase();
     if (targetSection === "main-contactme") {
-      targetSection = "main-contact";
+      targetSection = "quora-stats";
     }
     var targetSectionId = document.getElementById(targetSection);
     // console.log(targetSectionId);
     var targetSectionCordinates = targetSectionId.getBoundingClientRect();
 
-    console.log(targetSectionCordinates.top);
+    // console.log(targetSectionCordinates.top);
     sectionInterval = setInterval(function () {
       if (targetSectionId.getBoundingClientRect().top <= 50) {
         clearInterval(sectionInterval);
@@ -55,6 +55,6 @@ for (var i = 0; i < navAnchorTags.length; i++) {
 
       window.scrollBy(0, 40);
     }, 20);
-    console.log(targetSectionCordinates.top);
+    // console.log(targetSectionCordinates.top);
   });
 }

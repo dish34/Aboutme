@@ -13,7 +13,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --section-color-green: rgb(9, 122, 98);
+  --section-light-green: rgb(99, 231, 132);
+  --section-blue-green: rgb(12, 141, 201);
+  --section-color-blue: blue;
+  --section-light-purple: rgb(192, 115, 192);
 
+  --section-color-red: rgba(248, 36, 124, 0.849);
+  --section-light: white;
+}
 .full-screen {
   height: 100vh;
   display: flex;
@@ -24,6 +33,13 @@
   background-size: cover;
   background-attachment: fixed;
   color: white;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--section-color-green),
+    var(--section-light-green),
+    var(--section-blue-green),
+    blue
+  );
 }
 body {
   font-family: "Lilita One", cursive;
@@ -160,7 +176,7 @@ svg {
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 300px;
-  background-color: #57e589;
+  background-color: var(--section-blue-green);
   color: black;
 }
 #sintro {
@@ -420,17 +436,14 @@ a {
   text-decoration: none;
   color: white;
 }
--a:link {
-  color: orange;
-}
 button:hover {
-  background-color: orange;
+  background-color: var(--section-color-red);
 }
 a:hover {
-  color: orange;
+  color: var(--section-color-red);
 }
 svg:hover {
-  fill: orange;
+  fill: var(--section-color-red);
 }
 @keyframes moveleft {
   0% {
@@ -472,7 +485,7 @@ svg:hover {
   -padding-bottom: 10px;
 }
 .icons img:hover {
-  background-color: orange;
+  background-color: var(--section-light);
 }
 .quora {
   height: 50px;
