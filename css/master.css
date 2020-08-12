@@ -611,9 +611,6 @@ body::-webkit-scrollbar-corner {
   .show {
     height: 600px !important;
   }
-  .static-nav {
-    position: static;
-  }
 }
 @media (max-width: 444px) {
   .squora {
