@@ -4,7 +4,22 @@ setInterval(() => {
   load.style.display = "none";
   divcontent.style.display = "block";
 }, 3000);
-
+window.addEventListener(
+  "scroll",
+  function (event) {
+    var top = this.scrollY,
+      left = this.scrollX;
+    var header = document.querySelector(".top-content");
+    if (top != 0) {
+      header.style.backgroundColor = "black";
+      header.style.zIndex = "100";
+    } else {
+      header.style.opacity = "1";
+      header.style.backgroundColor = "transparent";
+    }
+  },
+  false
+);
 var typed3 = new Typed("#text", {
   strings: [
     " ",

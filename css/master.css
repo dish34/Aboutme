@@ -1,12 +1,20 @@
 #loader {
   margin: auto;
-  margin-top: 200px;
-  border: 16px solid rgba(128, 128, 128, 0.048);
-  border-top: 16px solid rgb(53, 247, 150);
+  margin-top: 40vh;
+  border: 20px solid rgba(128, 128, 128, 0.048);
+  border-top: 20px solid rgb(53, 247, 150);
   border-radius: 50%;
   height: 120px;
   width: 120px;
-  animation: spin 2s linear infinite;
+  animation: spin 4.5s ease-out infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) scale(0.3) translate(0px, 20px);
+  }
+  100% {
+    transform: rotate(360deg) scale(3) translate(20px, 60px);
+  }
 }
 * {
   margin: 0;
@@ -46,7 +54,7 @@ body {
 }
 .top-content {
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
 }
 .top {
@@ -57,6 +65,7 @@ body {
   padding: 15px;
 }
 .middle {
+  margin-top: 30vh;
   text-align: center;
 }
 #text {
@@ -468,15 +477,7 @@ svg:hover {
     transform: translateY(0px);
   }
 }
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
 
-  100% {
-    transform: rotate(360deg);
-  }
-}
 #git {
   height: 50px;
   width: 50px;
