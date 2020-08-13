@@ -6,14 +6,14 @@
   border-radius: 50%;
   height: 120px;
   width: 120px;
-  animation: spin 4.5s ease-out infinite;
+  animation: spin 5s ease-out infinite;
 }
 @keyframes spin {
   0% {
-    transform: rotate(0deg) scale(0.3) translate(0px, 20px);
+    transform: rotate(0deg) scale(0.3) translate(0px, 10px);
   }
   100% {
-    transform: rotate(360deg) scale(3) translate(20px, 60px);
+    transform: rotate(360deg) scale(2.5) translate(-40px, 40px);
   }
 }
 * {

@@ -13,6 +13,7 @@ window.addEventListener(
     if (top != 0) {
       header.style.backgroundColor = "black";
       header.style.zIndex = "100";
+      header.style.opacity = "0.85";
     } else {
       header.style.opacity = "1";
       header.style.backgroundColor = "transparent";
