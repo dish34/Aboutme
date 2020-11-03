@@ -51,7 +51,6 @@ function play() {
 var sectionInterval;
 var navAnchorTags = document.querySelectorAll(".top-left a");
 for (var i = 0; i < navAnchorTags.length - 1; i++) {
-  // console.log(navAnchorTags[i]);
   navAnchorTags[i].addEventListener("click", function (event) {
     event.preventDefault();
     var targetSection = "main-" + this.textContent.trim().toLowerCase();
@@ -59,7 +58,6 @@ for (var i = 0; i < navAnchorTags.length - 1; i++) {
       targetSection = "quora-stats";
     }
     var targetSectionId = document.getElementById(targetSection);
-    // console.log(targetSectionId);
     var targetSectionCordinates = targetSectionId.getBoundingClientRect();
 
     // console.log(targetSectionCordinates.top);
@@ -74,3 +72,41 @@ for (var i = 0; i < navAnchorTags.length - 1; i++) {
     // console.log(targetSectionCordinates.top);
   });
 }
+var progressBars = document.querySelectorAll(".skill > div");
+
+function initialiseBar(bar) {
+  bar.setAttribute("data-visited", false);
+  bar.style.width = 0 + "%";
+}
+
+for (var bar of progressBars) {
+  initialiseBar(bar);
+}
+function fillBar(bar) {
+  var currentWidth = 0;
+  var targetWidth = bar.getAttribute("data-bar-width");
+  var interval = setInterval(function () {
+    if (currentWidth >= targetWidth) {
+      clearInterval(interval);
+      return;
+    }
+    currentWidth++;
+    bar.style.width = currentWidth + "%";
+  }, 6);
+}
+function checkScroll() {
+  for (let bar of progressBars) {
+    var barCoordinates = bar.getBoundingClientRect();
+    if (
+      bar.getAttribute("data-visited") == "false" &&
+      barCoordinates.top <= window.innerHeight - barCoordinates.height
+    ) {
+      bar.setAttribute("data-visited", true);
+      fillBar(bar);
+    } else if (barCoordinates.top > window.innerHeight) {
+      bar.setAttribute("data-visited", false);
+      initialiseBar(bar);
+    }
+  }
+}
+window.addEventListener("scroll", checkScroll);
