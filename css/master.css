@@ -437,9 +437,17 @@ svg {
   display: flex;
   justify-content: center;
 }
+h2.intro2 {
+  background-color: #fefefe;
+  margin-bottom: 55px;
+}
 #byebye {
-  background: white;
+  background: rgba(255, 255, 255, 0.884);
   padding: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
 }
 .end2 {
   color: orange;
