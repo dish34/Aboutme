@@ -10,21 +10,13 @@ window.addEventListener(
     var top = this.scrollY,
       left = this.scrollX;
     var header = document.querySelector(".top-content");
-    var headerlinks = document.querySelectorAll(".top-left a");
-    console.log(headerlinks);
     if (top != 0) {
-      header.style.backgroundColor = "white";
+      header.style.backgroundColor = "black";
       header.style.zIndex = "100";
       header.style.opacity = "0.85";
-      headerlinks.forEach((link) => {
-        link.style.color = "black";
-      });
     } else {
       header.style.opacity = "1";
       header.style.backgroundColor = "transparent";
-      headerlinks.forEach((link) => {
-        link.style.color = "white";
-      });
     }
   },
   false
