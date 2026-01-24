@@ -24,13 +24,13 @@ window.addEventListener(
 var typed3 = new Typed("#text", {
   strings: [
     " ",
-    " <strong>Competitive Programmer</strong>",
-    "<strong>Django Lover</strong>",
-    "<strong>Quora Writer</strong>",
-    "<strong>A Friend</strong>",
+    " <strong>Software Engineer 👨‍💻 at Amdocs 🏢</strong>",
+    "<strong>4.7 Years in Java, Spring Boot, Azure, and Azure DevOps.</strong>",
+    // "<strong>Quora Writer</strong>",
+    // "<strong>A Friend</strong>",
   ],
   typeSpeed: 100,
-  backSpeed: 150,
+  backSpeed: 50,
   smartBackspace: true, // this is a default
   loop: true,
 });
