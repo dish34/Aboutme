@@ -141,6 +141,7 @@ svg {
   padding-top: 10px;
   color: black;
   background-color: rgb(242, 246, 252);
+  font-family: "Nunito", sans-serif;
   height: 500px;
   -display: flex;
   -justify-content: center;
